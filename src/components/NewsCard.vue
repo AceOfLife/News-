@@ -9,20 +9,12 @@
       >
         {{ post.title }}
       </a>
-      <img
-        class="w-full mt-2 rounded"
-        :src="post.thumbnail"
-        :alt="post.caption"
-        height="140"
-        width="210"
-      />
+      
       <p class="mt-2 text-justify text-gray-700 line-clamp-4">
         {{ post.abstract }}
       </p>
-    </div>
-    <div>
       <p class="mt-4 font-bold text-gray-600">{{ post.byline }}</p>
-      <p class="font-light text-gray-600">
+      <p class="mt-2 text-justify text-gray-700 line-clamp-4">
         {{ formatDate(post.published_date) }}
       </p>
     </div>
